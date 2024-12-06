@@ -1,0 +1,5 @@
+opencv-contrib-python
+Pillow~=9.5.0
+
+numpy~=1.21.6
+setuptools~=47.1.0

@@ -1,0 +1,54 @@
+SPvideo
+----------Fire----------
+--video video/test.mp4
+--model shufflenetonfire
+--weight weights/shufflenet_sp.pt
+
+SPImage
+------Fire---------
+--image images/bonfire.jpg
+--model shufflenetonfire
+--weight weights/shufflenet_sp.pt
+
+----Context----
+
+SPImage
+------NO Fire---------
+--image images/butterfly.jpg
+--model shufflenetonfire
+--weight weights/shufflenet_sp.pt
+
+Image
+------NO Fire---------
+--image images/butterfly.jpg
+--model shufflenetonfire
+--weight weights/shufflenet_ff.pt
+
+Stream
+
+---------SPRealtime------------
+--webcam
+--camera_to_use 0
+--model shufflenetonfire
+--weight weights/shufflenet_SP.pt
+
+------Fire---------
+--webcam
+--camera_to_use 0
+--model shufflenetonfire
+--weight weights/shufflenet_ff.pt
+
+
+-----------Regulars---------------
+
+Image
+------Fire---------
+--image images/bonfire.jpg
+--model shufflenetonfire
+--weight weights/shufflenet_ff.pt
+  
+Video
+-----------Fire----------
+--video video/test.mp4
+--model shufflenetonfire
+--weight weights/shufflenet_ff.pt
